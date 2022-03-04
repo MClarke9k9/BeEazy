@@ -47,33 +47,6 @@ function activate(context) {
 
 	});
 
-	// let disposableTwo = vscode.commands.registerCommand('beeazy.helloWorld', function () {
-	// 	const reactInfo = theList.map( theList => {
-	// 		return {
-	// 		label: theList.title,
-	// 		detail: theList.description,
-	// 		link: theList.link
-	// 		}
-	// 	})
-
-	// 	// var theLink = vscode.env.openExternal(reactInfo.link)
-	// 	const theQuestion = vscode.window.showQuickPick(reactInfo, {
-	// 		 matchOnDetail: true,
-	// 		 onDidSelectItem: (reactInfo) => {
-	// 			 vscode.env.openExternal(reactInfo.link)
-	// 		 }
-	// 	 })
-		 
-	// 	//  .then((selection) => {
-	// 	// 	 if (reactInfo !== null) return
-	// 	//  })
-		
-		
-	
-	// });
-	
-	// context.subscriptions.push(disposableTwo);
-
 	context.subscriptions.push(disposable);
 }
 

@@ -36,7 +36,7 @@ function activate(context) {
 			//  }
 		 }).then(() => {
 			//  if(reactInfo == null) return
-			 onDidSelectItem: vscode.env.openExternal(reactInfo.link)
+			//  onDidSelectItem: vscode.env.openExternal(reactInfo.link)
 			})
 		 
 		//  .then((selection) => {

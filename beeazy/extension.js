@@ -5,13 +5,15 @@ const theList = require('./reactjuice.json');
 // const jp = require('jsonparser');
 // const app = require('express')();
 // const htmlparser = require('html-parser');
-// const axios = require('axios');
+const axios = require('axios');
 
 
 /**
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
+
+	const theReactDocs =  axios.get('https://reactjs.org/docs/getting-started.html');
 
     const reactInfo = theList.map( theList => {
 		return {

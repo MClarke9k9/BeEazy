@@ -13,7 +13,7 @@ const axios = require('axios');
  */
 function activate(context) {
 
-	const theReactDocs =  axios.get('https://reactjs.org/docs/getting-started.html');
+	const theReactDocs = await axios.get('https://reactjs.org/docs/getting-started.html');
 
     const reactInfo = theList.map( theList => {
 		return {

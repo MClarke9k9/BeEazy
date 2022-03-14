@@ -33,12 +33,12 @@ function activate(context) {
 		// var theLink = vscode.env.openExternal(reactInfo.link)
 		const firstOne = vscode.window.showQuickPick(reactInfo, {
 			 matchOnDetail: true,
-			//  onDidSelectItem: (reactInfo) => {
-			// 	 vscode.env.openExternal(reactInfo.link)
-			//  }
+			 onDidSelectItem: (reactInfo) => {
+				 vscode.env.openExternal(reactInfo.link)
+			 }
 		 }).then(() => {
-			//  if(reactInfo == null) return
-			//  onDidSelectItem: vscode.env.openExternal(reactInfo.link)
+			 if(reactInfo == null) return
+			 onDidSelectItem: vscode.env.openExternal(reactInfo.link)
 			})
 		 
 		//  .then((selection) => {

@@ -30,7 +30,7 @@ function activate(context) {
 	let disposable = vscode.commands.registerCommand('beeazy.helloWorld', function () {
 		
 
-		// var theLink = vscode.env.openExternal(reactInfo.link)
+		
 		const firstOne = vscode.window.showQuickPick(reactInfo, {
 			 matchOnDetail: true,
 			 onDidSelectItem: (reactInfo) => {
@@ -40,10 +40,6 @@ function activate(context) {
 			 if(reactInfo == null) return
 			 onDidSelectItem: vscode.env.openExternal(reactInfo.link)
 			})
-		 
-		//  .then((selection) => {
-		// 	 if (reactInfo !== null) return
-		//  })
 		
 		
 

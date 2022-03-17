@@ -23,7 +23,6 @@ function activate(context) {
 		}
 	})
 	
-	// var infoLink = reactInfo.link;
 	console.log('Congratulations, your extension "beeazy" is now active!');
 	console.log(reactInfo);
 
